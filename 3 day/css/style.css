@@ -26,6 +26,7 @@
   height: 180px;
   border-radius: 50%;
   overflow: hidden;
+  animation: circle 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
 .sun {
@@ -33,14 +34,10 @@
   animation: sun 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
-@keyframes sun {
-  0% {
-    transform: rotate(0deg);
-  }
-  30% {
-    transform: rotate(55deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+.front-wall {
+  animation: front-wall 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
+}
+
+.side-wall {
+  animation: side-wall 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
