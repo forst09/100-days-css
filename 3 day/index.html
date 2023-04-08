@@ -19,9 +19,11 @@
                 <polygon points="115 125, 95 68, 155 125 " fill="#8c8c90" class="side-wall" />
                 <circle cx="-20" cy="125" r="18" fill="#ffef00" class="sun" />
                 <polygon points="" fill="#C2B162">
-                    <animate fill="freeze" attributeName="points" dur="5s"
+                    <animate fill="freeze" attributeName="points" dur="4s"
                         values="37,125, 155,125, 250,125; 37,125, 155,125, 200,150; 37,125, 155,125, 90,140; 37,125, 155,125, 0,155; 37,125, 155,125, -100,125"
-                        repeatCount="indefinite" additive="sum" />
+                        calcMode="spline"
+                        keySplines="0.7, 0.04, 0.79, 0.94; .32, .33, .39, .39; .32, .33, .39, .39; .88,.32,1,.99"
+                        keyTimes="0; 0.45; 0.7; 0.85; 1" repeatCount="indefinite" additive="sum" />
                 </polygon>
             </svg>
         </div>

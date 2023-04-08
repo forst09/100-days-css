@@ -34,85 +34,84 @@
 .circle {
     width: 180px;
     height: 180px;
-    // background-color: wheat;
     border-radius: 50%;
     overflow: hidden;
     animation: circle 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
-// @keyframes circle {
-//     0% {
-//         opacity: 0;
-//     }
+@keyframes circle {
+    0% {
+        opacity: 0;
+    }
 
-//     30% {
-//         opacity: 1;
-//     }
+    30% {
+        opacity: 1;
+    }
 
-//     80% {
-//         opacity: 1;
-//     }
+    80% {
+        opacity: 1;
+    }
 
-//     100% {
-//         opacity: 0;
-//     }
-// }
+    100% {
+        opacity: 0;
+    }
+}
 
 .sun {
     transform-origin: 90px 135px;
     animation: sun 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
-// @keyframes sun {
-//     0% {
-//         transform: rotate(0deg);
-//     }
+@keyframes sun {
+    0% {
+        transform: rotate(0deg);
+    }
 
-//     30% {
-//         transform: rotate(55deg);
-//     }
+    30% {
+        transform: rotate(55deg);
+    }
 
-//     100% {
-//         transform: rotate(180deg);
-//     }
-// }
+    100% {
+        transform: rotate(180deg);
+    }
+}
 
 .front-wall {
     animation: front-wall 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
-// @keyframes front-wall {
-//     0% {
-//         fill: #eeeeee;
-//     }
+@keyframes front-wall {
+    0% {
+        fill: #eeeeee;
+    }
 
-//     30% {
-//         fill: #eeeeee;
-//     }
+    30% {
+        fill: #eeeeee;
+    }
 
-//     100% {
-//         fill: #dddada;
-//     }
-// }
+    100% {
+        fill: #dddada;
+    }
+}
 
 .side-wall {
     animation: side-wall 4s infinite cubic-bezier(0.7, 0.04, 0.79, 0.94);
 }
 
-// @keyframes side-wall {
-//     0% {
-//         fill: #8c8c90;
-//     }
+@keyframes side-wall {
+    0% {
+        fill: #8c8c90;
+    }
 
-//     30% {
-//         fill: #dddada;
-//     }
+    30% {
+        fill: #dddada;
+    }
 
-//     70% {
-//         fill: #eeeeee;
-//     }
+    70% {
+        fill: #eeeeee;
+    }
 
-//     100% {
-//         fill: #eeeeee;
-//     }
-// }
+    100% {
+        fill: #eeeeee;
+    }
+}
