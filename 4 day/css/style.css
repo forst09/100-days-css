@@ -45,7 +45,6 @@
   height: 30px;
   animation: circleSmall 4s cubic-bezier(0.66, 0.79, 0.33, 0.53) infinite;
 }
-
 @keyframes circleBig {
   0% {
     transform: translate(-50%, -50%) scale(0);
