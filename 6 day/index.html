@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>6 day</title>
+</head>
+
+<body>
+    <div class="frame">
+        <svg class="noise" viewBox="0 0 200 200" xmlns='http://www.w3.org/2000/svg'>
+
+            <filter id='noiseFilter'>
+                <feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch' />
+            </filter>
+
+            <rect width='100%' height='100%' filter='url(#noiseFilter)' />
+        </svg>
+        <div class="card">
+            <div class="card__about">
+                <div class="card__photo"><img
+                        src="https://sun9-58.userapi.com/impg/PJ9ogs9_N_wlvgXdrTMG1MPL4NbEk5yZ6lR5PQ/xxC4ilSDQA8.jpg?size=448x302&quality=96&sign=01b87276317347ff5dbc743541320b40&type=album"
+                        alt="me"></div>
+                <h1 class="card__name">Daria Forst</h1>
+                <span class="card__specialty">Markup Developer</span>
+                <div class="card__btns">
+                    <a href="" class="card__btn">Follow</a>
+                    <a href="" class="card__btn">Message</a>
+                </div>
+            </div>
+            <div class="card__numbers">
+                <div class="card__numbers-item">
+                    <span class="card__numbers-value">523</span>
+                    <span class="card__numbers-desc">Posts</span>
+                </div>
+                <div class="card__numbers-item">
+                    <span class="card__numbers-value">1387</span>
+                    <span class="card__numbers-desc">Likes</span>
+                </div>
+                <div class="card__numbers-item">
+                    <span class="card__numbers-value">146</span>
+                    <span class="card__numbers-desc">Follower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
