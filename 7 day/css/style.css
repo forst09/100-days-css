@@ -1,9 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 button {
@@ -30,6 +39,7 @@ button:hover {
   color: #666666;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
+  overflow: hidden;
 }
 
 .notifications {
@@ -39,6 +49,11 @@ button:hover {
   border-radius: 3px;
   box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  z-index: 1;
+  transition: transform 0.8s ease-in-out;
+}
+.notifications.moved {
+  transform: translateX(150px);
 }
 
 .notifications__header {
@@ -101,7 +116,102 @@ button:hover {
 
 .menu {
   position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  border-radius: 2px;
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 170px;
+  height: 270px;
+  left: 70px;
+  z-index: 0;
+}
+.menu__nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu__link {
+  padding: 18px;
+  display: inline-flex;
+  color: #93B2CD;
+  font-size: 14px;
+  line-height: 14px;
+  width: 100%;
+  gap: 5px;
+}
+
+.notifications__items {
+  padding: 25px 15px 10px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  height: 100%;
+}
+.notifications__items::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #EBEBEB;
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: color 0.3s ease-in-out;
+  animation: notification 1s ease forwards;
   opacity: 0;
-  visibility: hidden;
-  z-index: -1;
+}
+.notification:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.notification:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.notification::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #5F98CD;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #ffffff;
+  background-color: #ffffff;
+}
+.notification:hover {
+  color: #5F98CD;
+  cursor: pointer;
+}
+
+@keyframes notification {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.notification__time {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.notification__text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.notification__person {
+  font-weight: 600;
 }
