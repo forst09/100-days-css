@@ -31,7 +31,7 @@
   width: 90%;
   height: 90%;
   background: #000000;
-  filter: blur(2px) contrast(20);
+  filter: blur(2px) contrast(5);
 }
 
 .circle {
@@ -67,8 +67,38 @@
 .circle--small1 {
   width: 7px;
   height: 7px;
-  transform-origin: 25px -60px;
-  animation: hehe 4s infinite linear;
+  transform-origin: 15px -70px;
+  animation: small1 3s infinite linear;
+}
+.circle--small2 {
+  width: 10px;
+  height: 10px;
+  transform-origin: 60px -20px;
+  animation: small1 3.5s infinite linear;
+}
+.circle--small3 {
+  width: 15px;
+  height: 15px;
+  transform-origin: 5px 55px;
+  animation: small1 5.5s infinite linear;
+}
+.circle--small4 {
+  width: 12px;
+  height: 12px;
+  transform-origin: 5px 55px;
+  animation: small1 3.5s infinite linear;
+}
+.circle--small5 {
+  width: 13px;
+  height: 13px;
+  transform-origin: -40px 50px;
+  animation: small1 3.5s infinite linear;
+}
+.circle--small6 {
+  width: 9px;
+  height: 9px;
+  transform-origin: -60px 0px;
+  animation: small1 3.5s infinite linear;
 }
 
 @keyframes big1 {
@@ -79,17 +109,16 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@keyframes hehe {
+@keyframes small1 {
   0% {
     transform: translate(-50%, -50%) rotate(0);
-    box-shadow: 0 0 0 0px #ffffff;
   }
-  10% {
-    transform: translate(-50%, -50%) rotate(36deg);
+  5% {
+    transform: translate(-50%, -50%) rotate(18deg);
     box-shadow: 0 0 0 5px #ffffff;
   }
-  20% {
-    transform: translate(-50%, -50%) rotate(72deg);
+  15% {
+    transform: translate(-50%, -50%) rotate(54deg);
     box-shadow: 0 0 0 0px #ffffff;
   }
   80% {
@@ -102,7 +131,6 @@
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    box-shadow: 0 0 0 0px #ffffff;
   }
 }
-@keyframes small1 {}
+@keyframes small2 {}
