@@ -54,61 +54,64 @@
 }
 .circle--big1 {
   transform-origin: 40px 20px;
-  animation: big1 5s infinite ease;
+  animation: big 5s infinite ease;
+  animation-delay: 1.5s;
 }
 .circle--big2 {
   transform-origin: 25px 20px;
-  animation: big1 3s infinite ease;
+  animation: big 3s infinite ease;
+  animation-delay: 3s;
 }
 .circle--big3 {
   transform-origin: 35px 20px;
-  animation: big1 7s infinite ease;
+  animation: big 7s infinite ease;
 }
 .circle--big4 {
   transform-origin: 20px 40px;
-  animation: big1 4s infinite ease;
+  animation: big 4s infinite ease;
+  animation-delay: 3.5s;
 }
 .circle--big5 {
   transform-origin: 30px 40px;
-  animation: big1 4.5s infinite ease;
+  animation: big 4.5s infinite ease;
 }
 .circle--small1 {
   width: 7px;
   height: 7px;
   transform-origin: 15px -70px;
-  animation: small1 3s infinite linear;
+  animation: small 3s infinite linear;
 }
 .circle--small2 {
   width: 10px;
   height: 10px;
   transform-origin: 60px -20px;
-  animation: small1 3.5s infinite linear;
+  animation: small 3.5s infinite linear;
 }
 .circle--small3 {
   width: 12px;
   height: 12px;
   transform-origin: 5px 55px;
-  animation: small1 3.5s infinite linear;
+  animation: small 3.5s infinite linear;
 }
 .circle--small4 {
   width: 10px;
   height: 10px;
   transform-origin: 5px 55px;
-  animation: small1 3s infinite linear;
+  animation: small 3s infinite linear;
 }
 .circle--small5 {
   width: 13px;
   height: 13px;
   transform-origin: -40px 50px;
-  animation: small1 3.5s infinite linear;
+  animation: small 3.5s infinite linear;
 }
 .circle--small6 {
   width: 9px;
   height: 9px;
   transform-origin: -60px 0px;
-  animation: small1 2.8s infinite linear;
+  animation: small 2.8s infinite linear;
 }
-@keyframes big1 {
+@keyframes big {
   0% {
     transform: translate(-50%, -50%) rotate(0);
   }
@@ -116,7 +119,7 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@keyframes small1 {
+@keyframes small {
   0% {
     transform: translate(-50%, -50%) rotate(0);
   }
@@ -140,4 +143,3 @@
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@keyframes small2 {}
